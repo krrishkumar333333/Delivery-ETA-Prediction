@@ -16,7 +16,11 @@ In supply chain logistics and last-mile delivery, inaccurate Estimated Times of 
 * Developed a robust ETA pipeline capable of dynamically adjusting predictions based on network-level intelligence.
 * Successfully isolated spatial and temporal bottlenecks, providing actionable intelligence for routing optimization and supply chain management.
 
-## 📂 Repository Contents
-* `Delivery_Network_Intelligence.ipynb`: The end-to-end data processing, feature synthesis, and model training pipeline.
-* `Delhivery_ETA_Whitepaper_IIT_Guwahati.pdf`: Comprehensive breakdown of the architectural strategy and business impact.
-* `dashboard.py`: Interactive dashboard script for real-time ETA visualization and monitoring.
+## 💻 How to Run the Dashboard
+To launch the interactive ETA tracking dashboard locally, navigate to this repository in your terminal and execute:
+```bash
+# If using standard Python
+python dashboard.py
+
+# If built with Streamlit
+streamlit run dashboard.py
