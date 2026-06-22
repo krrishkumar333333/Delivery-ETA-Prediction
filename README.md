@@ -1,6 +1,6 @@
 # Optimizing Delivery ETAs with Graph-Based Network Intelligence 📦
 
-![Certificate](Delivery_ETA.jpg)
+![Certificate](Delivery_ETA.png)
 
 *Certified by IIT Guwahati Summer Analytics*
 
