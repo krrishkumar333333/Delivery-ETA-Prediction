@@ -19,12 +19,12 @@ This project features a complete Graph-Enhanced Machine Learning pipeline and an
 * **Structural Isolation:** Heavy ML training libraries (Node2Vec, XGBoost) were strictly isolated to the Jupyter pipeline to ensure seamless, compilation-free execution of the Streamlit dashboard.
 
 ## 💻 Execution Instructions (Local Environment)
-This enterprise pipeline has been explicitly packaged for seamless local execution. No cloud authentication or Google Drive mounting is required.
+This enterprise pipeline has been explicitly packaged for seamless local execution. 
 
 **PHASE A: RUNNING THE CORE ML PIPELINE**
-1. Extract the repository files to your local machine.
-2. Ensure the `dataset_for_the_project` folder is sitting in the exact same directory as the Jupyter notebook.
-3. Open `Delivery_Network_Intelligence.ipynb` using Jupyter, VS Code, or your preferred IDE. *(Note: If using Google Colab, you must manually upload the .csv file into Colab's temporary session storage before running, as the code uses local relative paths).*
+1. Download this repository to your local machine.
+2. Unzip the `dataset_for_the_project.zip` file so the raw data folder sits in the exact same directory as the Jupyter notebook.
+3. Open `Delivery_Network_Intelligence.ipynb` using Jupyter, VS Code, or your preferred IDE. 
 4. Execute the cells sequentially. The pipeline will automatically find and ingest the local dataset.
 
 **PHASE B: LAUNCHING THE DIGITAL TWIN DASHBOARD**
