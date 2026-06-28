@@ -15,17 +15,17 @@ This project builds a graph-based intelligence system for Delhivery's logistics 
 
 ## Key Findings
 
-1. **A real, measured graph advantage.** Graph-enhanced model: 51.10 min MAE vs. baseline 69.69 min (26.7% improvement) and 34.89% vs. 27.16% of trips within 15% of actual (+7.73pp). Both required metrics confirm the advantage — measured directly, not assumed.
+1. **A real, measured graph advantage.** Graph-enhanced model: 51.10 min MAE vs. baseline 69.69 min (26.7% improvement) and 34.89% vs. 27.16% of trips within 15% of actual (+7.73pp). Both required metrics confirm the advantage - measured directly, not assumed.
 
-2. **The dataset's own train/test split is invalid for time-series modeling.** Both subsets span the identical date range — we built our own strict chronological split instead.
+2. **The dataset's own train/test split is invalid for time-series modeling.** Both subsets span the identical date range - we built our own strict chronological split instead.
 
-3. **The brief's ">20% SLA breach" threshold flags 96.6% of corridors** — making a binary flag non-discriminating. We replaced it with a volume-weighted severity ranking, and separately identified that 8% of "corridors" are actually same-hub pairs (intra-facility delays, not road-transit problems).
+3. **The brief's ">20% SLA breach" threshold flags 96.6% of corridors** - making a binary flag non-discriminating. We replaced it with a volume-weighted severity ranking, and separately identified that 8% of "corridors" are actually same-hub pairs (intra-facility delays, not road-transit problems).
 
-4. **A counter-intuitive, sample-verified routing finding.** Carting beats FTL on speed in 15 of 17 tested corridor profiles, often by 200+ minutes — contradicting the default assumption that FTL is the faster option. FTL only wins in Short-Haul, Low-Centrality-origin profiles.
+4. **A counter-intuitive, sample-verified routing finding.** Carting beats FTL on speed in 15 of 17 tested corridor profiles, often by 200+ minutes - contradicting the default assumption that FTL is the faster option. FTL only wins in Short-Haul, Low-Centrality-origin profiles.
 
-5. **A corrected revenue/SLA claim.** Upgrading the top-3 bottleneck hubs does NOT reduce the network-wide late-delivery rate (96.2% vs. 96.1% — statistically indistinguishable, since lateness is a near-universal network property). The honest, defensible claim: top-3 hubs carry 21.4% of trip volume but 35.9% of total delay-minutes — a disproportionate severity contribution.
+5. **A corrected revenue/SLA claim.** Upgrading the top-3 bottleneck hubs does NOT reduce the network-wide late-delivery rate (96.2% vs. 96.1% - statistically indistinguishable, since lateness is a near-universal network property). The honest, defensible claim: top-3 hubs carry 21.4% of trip volume but 35.9% of total delay-minutes - a disproportionate severity contribution.
 
-6. **IND000000ACB confirmed as the network's #1 bottleneck** on two independent, convergent graph metrics (betweenness centrality AND PageRank) — not a single-metric artifact.
+6. **IND000000ACB confirmed as the network's #1 bottleneck** on two independent, convergent graph metrics (betweenness centrality AND PageRank) - not a single-metric artifact.
 
 ## Repository Contents
 
