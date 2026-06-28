@@ -1,5 +1,7 @@
 # 🚛 Optimizing Delivery ETAs with Graph-Based Network Intelligence
 
+![Certificate](Delivery_ETA.png)
+
 **Author:** Krishna Vijay Kunwar
 **Program:** Consulting & Analytics Club, IIT Guwahati — Summer Projects '26
 
